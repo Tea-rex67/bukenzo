@@ -1,6 +1,52 @@
  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 
+/* Global no text shadow rules - overrides any potential shadows */
+*, *::before, *::after {
+  text-shadow: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+/* Explicit text elements */
+h1, h2, h3, h4, h5, h6,
+p, span, a, label, button,
+.nav-logo,
+.tqm,
+.ab-badge-num,
+.ab-badge-txt {
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+/* Preloader and special elements */
+.pl-script,
+.pl-title,
+.pl-counter {
+  text-shadow: none !important;
+}
+
+/* Hero section text */
+.hs,
+.ht1,
+.ht2,
+.hsub {
+  text-shadow: none !important;
+}
+
+/* Section titles and text */
+.se,
+.st,
+.ss,
+.sl2,
+.ta,
+.git,
+.gi-tag,
+.fs2 {
+  text-shadow: none !important;
+}
+
+
 :root {
   --white: #ffffff;
   --black: #0a0a0a;
@@ -578,11 +624,18 @@ a { text-decoration: none; color: inherit; }
 
 
 
-.hsub{
+.hsub {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(0.9rem, 2vw, 1.1rem); font-weight: 400;
-  color: #ffffff; max-width: 480px;
-  margin: 0 auto 2rem; line-height: 1.7;
+  font-size: clamp(1.1rem, 2.4vw, 1.25rem);
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+  max-width: 550px;
+  margin: 0 auto 2.8rem;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  backdrop-filter: none;
 }
 
 
@@ -601,9 +654,11 @@ a { text-decoration: none; color: inherit; }
 .ht1 { display: block; color: var(--white); }
 .ht2 {
   display: block; 
+  color: var(--gold-pale);
 }
 .hd {
-  width: 50px; height: 2px; background: var(--gradient-gold);
+  width: 50px; height: 2p
+  x; background: var(--gradient-gold);
   margin: 0 auto 1.2rem; border-radius: 1px;
 }
 .hc {
@@ -693,10 +748,15 @@ a { text-decoration: none; color: inherit; }
 
 .ss {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(0.9rem, 1.8vw, 1.05rem); font-weight: 400;
-  color: var(--black-gold); max-width: 500px;
-  margin-bottom: 2.5rem; line-height: 1.7;
-  text-shadow: 0 1px 3px rgba(255, 215, 0, 0.1);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 400;
+  color: #ffffff;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+  max-width: 600px;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-shadow: none !important;
 }
 
 
@@ -1074,7 +1134,7 @@ a { text-decoration: none; color: inherit; }
 .sl2 { font-family: 'Inter', sans-serif; font-size: clamp(0.55rem, 1.2vw, 0.65rem); letter-spacing: 3px; text-transform: uppercase; color: var(--gray-text); }
 .ms { overflow: hidden; padding: clamp(2rem, 5vw, 3.5rem) 0; border-top: 1px solid rgba(212, 175, 55, 0.08); border-bottom: 1px solid rgba(212, 175, 55, 0.08); }
 .mt { display: flex; animation: marquee 30s linear infinite; width: max-content; }
-.mi { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: -2px; text-transform: uppercase; color: var(--black);  white-space: nowrap; margin-right: 2rem; }
+.mi { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: -2px; text-transform: uppercase; color: #B8860B;  white-space: nowrap; margin-right: 2rem; }
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 .pi { display: flex; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 14px; background: var(--glass); backdrop-filter: blur(10px); transition: all 0.4s ease; }
 .pi:hover { border-color: rgba(212, 175, 55, 0.25); }
