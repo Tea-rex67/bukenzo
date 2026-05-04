@@ -583,12 +583,7 @@ a { text-decoration: none; color: inherit; }
   font-size: clamp(0.9rem, 2vw, 1.1rem); font-weight: 400;
   color: #ffffff; max-width: 480px;
   margin: 0 auto 2rem; line-height: 1.7;
-  text-shadow: 
-    0 0 20px #FFD700,
-    0 0 30px #FFD700,
-    0 0 40px #FFD700,
-    0 1px 10px rgba(255,215,0,0.8);
-}
+  
 
 
 
