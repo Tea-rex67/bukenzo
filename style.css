@@ -3,7 +3,7 @@
 
 :root {
   --white: #ffffff;
-  --black: #050203;
+  --black: #0a0a0a;
   
   /* Vibrant gold */
   --gold: #FFD700;
@@ -529,9 +529,10 @@ a { text-decoration: none; color: inherit; }
 }
 .hr-bg {
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 20% 50%, rgba(212, 175, 55, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(212, 175, 55, 0.04) 0%, transparent 40%),
-    linear-gradient(180deg, var(--black) 0%, var(--gray) 100%);
+  background-image: url('WhatsApp Image 2026-05-03 at 12.02.06 (2).jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 1;
 }
 .hr-v {
@@ -1067,7 +1068,7 @@ a { text-decoration: none; color: inherit; }
 .sl2 { font-family: 'Inter', sans-serif; font-size: clamp(0.55rem, 1.2vw, 0.65rem); letter-spacing: 3px; text-transform: uppercase; color: var(--gray-text); }
 .ms { overflow: hidden; padding: clamp(2rem, 5vw, 3.5rem) 0; border-top: 1px solid rgba(212, 175, 55, 0.08); border-bottom: 1px solid rgba(212, 175, 55, 0.08); }
 .mt { display: flex; animation: marquee 30s linear infinite; width: max-content; }
-.mi { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: -2px; text-transform: uppercase; color: var(--black);  white-space: nowrap; margin-right: 2rem; }
+.mi { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: -2px; text-transform: uppercase; color: var(--black); -webkit-text-stroke: 7px rgba(212, 175, 55, 0.3); white-space: nowrap; margin-right: 2rem; }
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 .pi { display: flex; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 14px; background: var(--glass); backdrop-filter: blur(10px); transition: all 0.4s ease; }
 .pi:hover { border-color: rgba(212, 175, 55, 0.25); }
