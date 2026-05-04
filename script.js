@@ -2,12 +2,18 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Preloader
-window.addEventListener('load', () => {
-    updateCounter();
-    setTimeout(() => {
-        document.getElementById('preloader').classList.add('hidden');
-    }, 2200);
-});
+if (sessionStorage.getItem('preloaderShown')) {
+    const preloader = document.getElementById('preloader');
+    if (preloader) preloader.style.display = 'none';
+} else {
+    sessionStorage.setItem('preloaderShown', 'true');
+    window.addEventListener('load', () => {
+        updateCounter();
+        setTimeout(() => {
+            document.getElementById('preloader').classList.add('hidden');
+        }, 2200);
+    });
+}
 
 function updateCounter() {
     const pc = document.getElementById('plc');
