@@ -4,6 +4,7 @@
 :root {
   --white: #ffffff;
   --black: #0a0a0a;
+  --deep-black: #1a1a1a;
   
   /* Vibrant gold */
   --gold: #FFD700;
@@ -543,8 +544,20 @@ a { text-decoration: none; color: inherit; }
 }
 .hr-vo {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.75) 100%);
+  background: linear-gradient(180deg, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.6) 100%);
   z-index: 3;
+}
+
+.hr-bg2 {
+  position: absolute; inset: 0;
+  background-image: url('WhatsApp Image 2026-05-03 at 12.20.00 (2).jpeg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  mix-blend-mode: soft-light;
+  z-index: 2;
+  will-change: transform;
 }
 .hr-n {
   position: absolute; inset: 0; opacity: 0.025;
@@ -861,7 +874,7 @@ a { text-decoration: none; color: inherit; }
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: var(--gold);
+  color: var(--deep-black);
   margin-bottom: 1.5rem;
   text-align: center;
   letter-spacing: 1px;
@@ -1062,13 +1075,13 @@ a { text-decoration: none; color: inherit; }
 .sg { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.2rem, 3vw, 1.5rem); }
 .si { text-align: center; padding: clamp(1.2rem, 3vw, 1.5rem); border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 14px; background: var(--glass); backdrop-filter: blur(10px); transition: all 0.4s ease; }
 .si:hover { border-color: rgba(212, 175, 55, 0.25); transform: translateY(-4px); }
-.ss { font-family: 'Inter', sans-serif; font-size: clamp(0.9rem, 1.8vw, 1.05rem); font-weight: 400; color: var(--gray-text); line-height: 1.7; text-shadow: 0 1px 3px rgba(255, 215, 0, 0.1); text-align: center; margin-left: 4.55rem;} .se { text-align: center;}
-.st { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.3rem, 4.7vw, 2.5rem); background: var(--gradient-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.8rem; text-align: center;}
+.ss { font-family: 'Inter', sans-serif; font-size: clamp(0.9rem, 1.8vw, 1.05rem); font-weight: 400; color: var(--gray-text); line-height: 1.7;  text-align: center; margin-left: 4.55rem;} .se { text-align: center;}
+.st { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size:clamp(1.3rem, 4.7vw, 2.5rem); letter-spacing :0.35rem ; color: var(--gold);   margin-bottom: 0.8rem; text-align: center;}
 .sn { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.8rem, 5vw, 2.8rem); background: var(--gradient-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .sl2 { font-family: 'Inter', sans-serif; font-size: clamp(0.55rem, 1.2vw, 0.65rem); letter-spacing: 3px; text-transform: uppercase; color: var(--gray-text); }
 .ms { overflow: hidden; padding: clamp(2rem, 5vw, 3.5rem) 0; border-top: 1px solid rgba(212, 175, 55, 0.08); border-bottom: 1px solid rgba(212, 175, 55, 0.08); }
 .mt { display: flex; animation: marquee 30s linear infinite; width: max-content; }
-.mi { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: -2px; text-transform: uppercase; color: var(--black); -webkit-text-stroke: 7px rgba(212, 175, 55, 0.3); white-space: nowrap; margin-right: 2rem; }
+.mi { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: -2px; text-transform: uppercase; color: var(--black);  white-space: nowrap; margin-right: 2rem; }
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 .pi { display: flex; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 14px; background: var(--glass); backdrop-filter: blur(10px); transition: all 0.4s ease; }
 .pi:hover { border-color: rgba(212, 175, 55, 0.25); }
