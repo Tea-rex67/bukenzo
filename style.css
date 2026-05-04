@@ -1067,7 +1067,7 @@ a { text-decoration: none; color: inherit; }
 .sl2 { font-family: 'Inter', sans-serif; font-size: clamp(0.55rem, 1.2vw, 0.65rem); letter-spacing: 3px; text-transform: uppercase; color: var(--gray-text); }
 .ms { overflow: hidden; padding: clamp(2rem, 5vw, 3.5rem) 0; border-top: 1px solid rgba(212, 175, 55, 0.08); border-bottom: 1px solid rgba(212, 175, 55, 0.08); }
 .mt { display: flex; animation: marquee 30s linear infinite; width: max-content; }
-.mi { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: -2px; text-transform: uppercase; color: var(--black); -webkit-text-stroke: 7px rgba(212, 175, 55, 0.3); white-space: nowrap; margin-right: 2rem; }
+.mi { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: -2px; text-transform: uppercase; color: var(--black);  white-space: nowrap; margin-right: 2rem; }
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 .pi { display: flex; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 14px; background: var(--glass); backdrop-filter: blur(10px); transition: all 0.4s ease; }
 .pi:hover { border-color: rgba(212, 175, 55, 0.25); }
