@@ -583,7 +583,12 @@ a { text-decoration: none; color: inherit; }
   font-size: clamp(0.9rem, 2vw, 1.1rem); font-weight: 400;
   color: #ffffff; max-width: 480px;
   margin: 0 auto 2rem; line-height: 1.7;
-  
+  text-shadow: 
+    0 0 20px #FFD700,
+    0 0 30px #FFD700,
+    0 0 40px #FFD700,
+    0 1px 10px rgba(255,215,0,0.8);
+}
 
 
 
@@ -1070,7 +1075,7 @@ a { text-decoration: none; color: inherit; }
 .sg { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.2rem, 3vw, 1.5rem); }
 .si { text-align: center; padding: clamp(1.2rem, 3vw, 1.5rem); border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 14px; background: var(--glass); backdrop-filter: blur(10px); transition: all 0.4s ease; }
 .si:hover { border-color: rgba(212, 175, 55, 0.25); transform: translateY(-4px); }
-.ss { font-family: 'Inter', sans-serif; font-size: clamp(0.9rem, 1.8vw, 1.05rem); font-weight: 400; color: var(--gray-text); line-height: 1.7;  text-align: center; margin-left: 4.55rem;} .se { text-align: center;}
+.ss { font-family: 'Inter', sans-serif; font-size: clamp(0.9rem, 1.8vw, 1.05rem); font-weight: 400; color: var(--gray-text); line-height: 1.7; text-shadow: 0 1px 3px rgba(255, 215, 0, 0.1); text-align: center; margin-left: 4.55rem;} .se { text-align: center;}
 .st { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size:clamp(1.3rem, 4.7vw, 2.5rem); letter-spacing :0.35rem ; color: var(--gold);   margin-bottom: 0.8rem; text-align: center;}
 .sn { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.8rem, 5vw, 2.8rem); background: var(--gradient-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .sl2 { font-family: 'Inter', sans-serif; font-size: clamp(0.55rem, 1.2vw, 0.65rem); letter-spacing: 3px; text-transform: uppercase; color: var(--gray-text); }
