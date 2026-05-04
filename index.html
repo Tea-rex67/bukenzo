@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukenzo Venture | Luxury Event Planning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="brand-logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="sc-p"></div>
+
+    <div class="preloader" id="preloader">
+        <div class="pl-script">Est. 2024</div>
+        <div class="pl-title">BUKENZO</div>
+        <div class="pl-line-box"><div class="pl-line-fill"></div></div>
+        <div class="pl-counter" id="plc">0%</div>
+    </div>
+<nav class="nav" id="nav">
+        <div class="nav-c">
+            <a href="index.html" class="nl">
+                <img src="brand-logo.jpeg" alt="Bukenzo Logo" class="nav-logo">
+            </a>
+            <ul class="nm" id="nm">
+                <li><a href="index.html" class="nl2">Home</a></li>
+                <li><a href="about.html" class="nl2">About</a></li>
+                <li><a href="services.html" class="nl2">Services</a></li>
+                <li class="portfolio-dropdown">
+                    <a href="gallery.html" class="nl2 portfolio-link">Events</a>
+                    <div class="portfolio-menu">
+                        <div class="portfolio-item" data-filter="all">All</div>
+                        <div class="portfolio-item" data-filter="Turkey">Turkey</div>
+                        <div class="portfolio-item" data-filter="Northampton">Northampton & Uk</div>
+                        <div class="portfolio-item" data-filter="Morocco">Morocco</div>
+                        <div class="portfolio-item" data-filter="Egypt">Egypt</div>
+                        <div class="portfolio-item" data-filter="Portugal">Portugal</div>
+                    </div>
+                </li>
+
+                <li><a href="contact.html" class="nl2">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">Get Started</a>
+                <button class="mmb" id="mmb" aria-label="Toggle navigation menu">
+                    <span class="hb"></span>
+                    <span class="hb"></span>
+                    <span class="hb"></span>
+                </button>
+            </div>
+        </div>
+        <div class="nav-underline"></div>
+    </nav>
+
+    <section class="hr">
+        <div class="hr-bg"></div>
+        <video class="hr-v" autoplay muted loop playsinline poster="">
+            <source src="WhatsApp Video 2026-05-03 at 11.56.41.mp4" type="video/mp4">
+        </video>
+        <div class="hr-vo"></div>
+        <div class="hr-n"></div>
+        <div class="hr-in">
+            <div class="hs">Luxury Event Planning</div>
+            <h1><span class="ht1">Elevate</span><span class="ht2">Your Events</span></h1>
+            <div class="hd"></div>
+            <p class="hsub">Experience unparalleled luxury with world-class event planning. Every moment crafted to perfection.</p>
+            <a href="contact.html" class="hc" style="margin-top:1rem;"><span>Plan Your Event</span><span class="har">&#8594;</span></a>
+        </div>
+
+        <div class="hsc" onclick="document.getElementById('seb').scrollIntoView({behavior:'smooth'})">
+             <span class="hst"><i class="fa-solid fa-angle-down" style="font-size:25px; color:#d4af37;"></i></span>
+            <div class="hsl"></div>
+        </div>
+    </section>
+
+    <div class="ms">
+        <div class="mt">
+            <span class="mi">Weddings</span><span class="mi">Corporate Events</span><span class="mi">Private Parties</span><span class="mi">Luxury Design</span><span class="mi">Burials</span><span class="mi">Birthday Parties</span><span class="mi">Award ceremonies</span>
+            <span class="mi">Weddings</span><span class="mi">Corporate Events</span><span class="mi">Private Parties</span><span class="mi">Luxury Design</span><span class="mi">Burials</span><span class="mi">Birthday Parties</span><span class="mi">Award ceremonies</span>
+        </div>
+    </div>
+
+    <section class="sec">
+        <div class="cont tcol">
+            <div class="rl">
+                <div class="se">Who We Are</div>
+                <h2 class="st">Crafting <em>Memories</em> That Last Forever</h2>
+                <div class="sd"></div>
+                <p style="color:var(--gray-text);line-height:1.8;margin-bottom:1.5rem;">Founded in 2024, Bukenzo Venture has quickly established itself as a premier luxury event planning company. We believe that every event tells a story, and our mission is to help you tell yours in the most extraordinary way possible.</p>
+                <p style="color:var(--gray-text);line-height:1.8;margin-bottom:2rem;">Our team of seasoned professionals combines creativity, precision, and an unwavering commitment to excellence.</p>
+                <a href="about.html" class="hc"><span>Learn Our Story</span><span class="har">&#8594;</span></a>
+            </div>
+            <div class="rr">
+                <div class="ab-img-wrap rs">
+                    <img src="WhatsApp Image 2026-05-03 at 11.59.48 (1).jpeg" alt="Luxury Event Setup" class="ab-img">
+                    <div class="ab-img-badge">
+                        <span class="ab-badge-num">150+</span>
+                        <span class="ab-badge-txt">Events Planned</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="sec light-stats" style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);">
+        <div class="cont">
+            <div class="se ru" style="text-align:center;">By The Numbers</div>
+            <h2 class="st ru light-title" style="text-align:center;">Our <em>Impact</em> in Numbers</h2>
+            <div class="sg" style="margin-top:3rem;">
+                <div class="si ru"><div class="sn" data-target="150">0</div><div class="sl2">Events Planned</div></div>
+                <div class="si ru"><div class="sn" data-target="98">0</div><div class="sl2">Client Satisfaction %</div></div>
+                <div class="si ru"><div class="sn" data-target="12">0</div><div class="sl2">Team Members</div></div>
+                <div class="si ru"><div class="sn" data-target="5">0</div><div class="sl2">Years Experience</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec">
+        <div class="cont">
+            <div class="se ru" style="text-align:center;">What We Do</div>
+            <h2 class="st ru" style="text-align:center;">Our <em>Services</em></h2>
+            <p class="ss ru" style="text-align:center; margin: 0 auto 2.5rem;">From intimate celebrations to grand corporate affairs, we bring your vision to life with impeccable style.</p>
+            <div class="cg">
+                <div class="cl ru">
+                    <div class="si2">&#9829;</div>
+                    <h3>Weddings</h3>
+                    <p>Your love story deserves an extraordinary celebration. We craft bespoke weddings that reflect your unique journey.</p>
+                    <a href="services.html" class="hc" style="margin-top:0.5rem;"><span>Explore</span><span class="har">&#8594;</span></a>
+                </div>
+                <div class="cl ru">
+                    <div class="si2">&#9733;</div>
+                    <h3>Corporate Events</h3>
+                    <p>Elevate your brand with flawlessly executed corporate events that reflect your company's excellence.</p>
+                    <a href="services.html" class="hc" style="margin-top:0.5rem;"><span>Explore</span><span class="har">&#8594;</span></a>
+                </div>
+                <div class="cl ru">
+                    <div class="si2">&#9830;</div>
+                    <h3>Private Parties</h3>
+                    <p>Celebrate life's milestones in unforgettable style. Every occasion becomes extraordinary with our touch.</p>
+                    <a href="services.html" class="hc" style="margin-top:0.5rem;"><span>Explore</span><span class="har">&#8594;</span></a>
+                </div>
+                <div class="cl ru">
+                    <div class="si2">&#9830;</div>
+                    <h3>Luxury Event Design</h3>
+                    <p>Transform any space into a breathtaking environment with stunning visuals, lighting, and decor.</p>
+                    <a href="services.html" class="hc" style="margin-top:0.5rem;"><span>Explore</span><span class="har">&#8594;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec vid-sec">
+
+        <video class="vid-sec-v" autoplay muted loop playsinline>
+            <source src="WhatsApp Video 2026-05-03 at 11.53.45.mp4" type="video/mp4">
+        </video>
+
+        <div class="vid-sec-o"></div>
+        <div class="cont" style="position:relative; z-index:2; text-align:center;">
+            <div class="se ru" style="color: var(--gold); letter-spacing: 6px;">Experience</div>
+            <h2 class="st ru" style="font-size: clamp(2rem, 6vw, 4rem);">Luxury in <em>Motion</em></h2>
+            <p class="ss ru" style="margin: 0 auto 2rem; max-width: 600px; color: rgba(255,255,255,0.7);">Watch how we transform ordinary spaces into extraordinary experiences.</p>
+            <a href="gallery.html" class="hc ru"><span>View Portfolio</span><span class="har">&#8594;</span></a>
+        </div>
+    </section>
+
+<section class="sec light-gallery" style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);">
+        <div class="cont">
+            <div class="se ru" style="text-align:center;">Gallery</div>
+
+            <h2 class="st ru light-title" style="text-align:center;">Featured <em>Events</em></h2>
+            <div style="text-align:center; margin-bottom:1.5rem;">
+                <a href="gallery.html" class="hc ru" style="font-size: 0.85rem;"><span>View Full Gallery</span><span class="har">→</span></a>
+            </div>
+            <p class="ss ru" style="text-align:center; margin: 0 auto 2.5rem;">A glimpse into our most memorable celebrations.</p>
+
+<div class="gg">
+
+
+
+                <div class="gi ru rs" data-img="WhatsApp Image 2026-05-03 at 11.59.48 (1).jpeg">
+                    <img src="WhatsApp Image 2026-05-03 at 11.59.48 (1).jpeg" alt="Elegant Garden Ceremony">
+                    <span class="gi-tag">Wedding</span>
+                    <div class="go">
+                        <div class="gol"></div>
+                        <div class="got">Coporate</div>
+                        <div class="git">Portuguese Gala Event</div>
+                    </div>
+                </div>
+                <div class="gi ru rs" data-img="WhatsApp Image 2026-05-03 at 12.27.39 (1).jpeg">
+                    <img src="WhatsApp Image 2026-05-03 at 12.27.39 (1).jpeg" alt="Annual Gala Dinner">
+                    <span class="gi-tag">Corporate</span>
+                    <div class="go">
+                        <div class="gol"></div>
+                        <div class="got">Wedding</div>
+                        <div class="git">Bodrum Beach Wedding</div>
+                    </div>
+                </div>
+                <div class="gi ru rs" data-img="WhatsApp Image 2026-05-03 at 12.02.06 (1).jpeg">
+                    <img src="WhatsApp Image 2026-05-03 at 12.02.06 (1).jpeg" alt="Beachside Wedding Ceremony">
+                    <span class="gi-tag">Private Party</span>
+                    <div class="go">
+                        <div class="gol"></div>
+                        <div class="got">Private Party</div>
+                        <div class="git">UK Private Celebration</div>
+                    </div>
+                </div>
+
+                <div class="gi ru rs" data-img="WhatsApp Image 2026-05-03 at 12.14.43 (1).jpeg">
+                    <img src="WhatsApp Image 2026-05-03 at 12.14.43 (1).jpeg" alt="Luxury Beach Reception">
+                    <span class="gi-tag">Wedding</span>
+                    <div class="go">
+                        <div class="gol"></div>
+                        <div class="got">Wedding</div>
+                        <div class="git">Agadir Luxury Reception</div>
+                    </div>
+                </div>
+                <div class="gi ru rs" data-img="WhatsApp Image 2026-05-03 at 11.55.29 (3).jpeg">
+                    <img src="WhatsApp Image 2026-05-03 at 11.55.29 (3).jpeg" alt="Egyptian Gala Celebration">
+                    <span class="gi-tag">Corporate</span>
+                    <div class="go">
+                        <div class="gol"></div>
+                        <div class="got">Corporate</div>
+                        <div class="git">Egyptian Corporate Gala</div>
+                    </div>
+                </div>
+                <div class="gi ru rs" data-img="Portugal\WhatsApp Image 2026-05-03 at 12.27.39 (4).jpeg">
+                    <img src="WhatsApp Image 2026-05-03 at 12.27.39 (4).jpeg" alt="Portuguese Sunset Event">
+                    <span class="gi-tag">Private</span>
+                    <div class="go">
+                        <div class="gol"></div>
+                        <div class="got">Private</div>
+                        <div class="git">Portugal Sunset Celebration</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top:2.5rem;">
+                <a href="gallery.html" class="hc ru"><span>View Full Gallery</span><span class="har">&#8594;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec ts" id="seb">
+        <div class="cont">
+            <div class="se ru">Testimonials</div>
+            <h2 class="st ru">What Our <em>Clients</em> Say</h2>
+
+            <div class="tc ru">
+                <div class="t-nav-side">
+
+                <div class="tcard a">
+                    <div class="tqm">"</div>
+                    <p class="ttx">Bukenzo Venture transformed our wedding into a dream we never wanted to wake from. Absolute perfection in every detail.</p>
+                    <div class="ta">Sarah &amp; Michael</div>
+                </div>
+                <div class="tcard">
+                    <div class="tqm">"</div>
+                    <p class="ttx">The corporate gala was beyond expectations. Every detail was executed with precision and elegance.</p>
+                    <div class="ta">CEO, TechCorp</div>
+                </div>
+                <div class="tcard">
+                    <div class="tqm">"</div>
+                    <p class="ttx">Our daughter's sweet sixteen was magical. Bukenzo made it an unforgettable experience for everyone.</p>
+                    <div class="ta">Lisa Richardson</div>
+                </div>
+                <div class="tcard">
+                    <div class="tqm">"</div>
+                    <p class="ttx">They planned our 25th anniversary with such grace and creativity. Every guest felt the love in every detail.</p>
+                    <div class="ta">James &amp; Amanda</div>
+                </div>
+                <div class="tcard">
+                    <div class="tqm">"</div>
+                    <p class="ttx">Our annual retreat went from ordinary to legendary. The team still talks about it months later.</p>
+                    <div class="ta">Director, Global Finance Ltd</div>
+                </div>
+                <div class="tcard">
+                    <div class="tqm">"</div>
+                    <p class="ttx">My father's 70th birthday was nothing short of spectacular. Bukenzo treated our family like royalty.</p>
+                    <div class="ta">The Okafor Family</div>
+                </div>
+                <div class="tcard">
+                    <div class="tqm">"</div>
+                    <p class="ttx">The luxury design team turned a blank warehouse into a golden paradise. Pure artistry from start to finish.</p>
+                    <div class="ta">Rebecca Stone</div>
+                </div>
+            </div>
+
+            <div class="t-nav ru">
+                <div class="tdots">
+                    <button class="tdot a" aria-label="Testimonial 1"></button>
+                    <button class="tdot" aria-label="Testimonial 2"></button>
+                    <button class="tdot" aria-label="Testimonial 3"></button>
+                    <button class="tdot" aria-label="Testimonial 4"></button>
+                    <button class="tdot" aria-label="Testimonial 5"></button>
+                    <button class="tdot" aria-label="Testimonial 6"></button>
+                    <button class="tdot" aria-label="Testimonial 7"></button>
+                </div> 
+                <div class="t-arrows">
+                    <button class="t-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button class="t-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<section class="sec light-cta" style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);">
+        <div class="cont" style="text-align:center;">
+            <div class="se ru">Get Started</div>
+            <h2 class="st ru light-title">Ready to Create<br>Something <em>Extraordinary?</em></h2>
+            <a href="contact.html" class="hc ru" style="margin-top:2rem;"><span>Begin Your Journey</span><span class="har">&#8594;</span></a>
+        </div>
+    </section>
+
+    <footer class="fl">
+            <div class="fll">BUKENZO<span>.</span></div>
+        <p class="fs2">Creating unforgettable experiences with timeless elegance</p>
+        <div class="fso">
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+        </div>
+        <p class="fc">&#169; 2024 Bukenzo Venture. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
