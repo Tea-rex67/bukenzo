@@ -560,3 +560,43 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
   }
 });
+
+document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const form = document.getElementById("appointmentForm");
+
+  const data = {
+    firstName: form.querySelector('[name="firstName"]').value,
+    lastName: form.querySelector('[name="lastName"]').value,
+    email: form.querySelector('[name="email"]').value,
+    phone: form.querySelector('[name="phone"]').value,
+    date: form.querySelector('[name="appointmentDate"]').value,
+    time: form.querySelector('[name="appointmentTime"]').value,
+    eventType: form.querySelector('[name="eventType"]').value,
+    message: form.querySelector('[name="message"]').value
+  };
+
+  fetch("https://script.google.com/macros/s/AKfycbxmzpqXe573MRJh5-2rpJ6yrUtJXc1LhzZH5VejKYArVLeTmx1klAyGSFZskMVx0bx8/exec", {
+    method: "POST",
+    body: JSON.stringify(data)
+  });
+
+  // hide form
+  document.getElementById("formBlock").style.display = "none";
+
+  // show success
+  document.getElementById("successBlock").style.display = "block";
+
+  // fill summary
+  document.getElementById("apptSummaryList").innerHTML = `
+    <li><strong>Name:</strong> ${data.firstName} ${data.lastName}</li>
+    <li><strong>Email:</strong> ${data.email}</li>
+    <li><strong>Phone:</strong> ${data.phone}</li>
+    <li><strong>Date:</strong> ${data.date}</li>
+    <li><strong>Time:</strong> ${data.time}</li>
+    <li><strong>Event:</strong> ${data.eventType}</li>
+  `;
+
+  form.reset();
+});
