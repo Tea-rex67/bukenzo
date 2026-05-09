@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bukenzo Events | Book Appointment</title>
+
+<!-- Flaticon UIcons Brands CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+/>
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="booking-form.css" />
+
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+     <!-- NAVBAR -->
+    <nav class="navbar">
+
+      <!-- LOGO -->
+      <a href="index.html" class="logo">
+        <img class="nav-logo" src="brand-logo.jpeg" alt="Bukenzo ventures Logo">
+      </a>
+
+      <!-- DESKTOP LINKS -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html#about-section">Our Story</a></li>
+        <li><a href="index.html#events-section">Services</a></li>
+        <li><a href="index.html#gallery-section">Events</a></li>
+        <li><a href="form.html">Contact us</a></li>
+      </ul>
+
+
+      <!-- CALL BUTTON -->
+      <a href="tel:+447533438897" class="call-btn">CALL: +44 7533 438897</a>
+
+      <!-- HAMBURGER -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about-section">Our Story</a></li>
+        <li><a href="index.html#events-section">Services</a></li>
+        <li><a href="index.html#gallery-section">Events</a></li>
+        <li><a href="form.html">Get an appointment</a></li>
+      </ul>
+
+    </nav>
+
+  <header class="hero">
+
+    <div class="hero-content">
+      <h1>Bukenzo Events</h1>
+      <p>Big Vibes, Flawless Events & Timeless Memories</p>
+      <a href="#appointment-section" class="book-btn">Book Appointment</a>
+    </div>
+  </header>
+
+  <section id="appointment-section" class="talk-section appointment-light">
+    <div class="appointment-shell">
+      <div class="appointment-card" role="region" aria-label="Book an appointment">
+        <div class="appointment-grid">
+          <div class="appointment-left">
+
+            <p>
+              Tell us about your event and preferred time. We’ll respond to confirm availability and the next steps.
+            </p>
+
+            <div class="appointment-pills" aria-label="What to expect">
+              <div class="appointment-pill"><i class="fa-solid fa-message"></i> Fast response</div>
+              <div class="appointment-pill"><i class="fa-solid fa-calendar-days"></i> Choose date & time</div>
+              <div class="appointment-pill"><i class="fa-solid fa-star"></i> Premium planning</div>
+            </div>
+            <section class="contact-info-section" id="contact-info">
+
+  <h2 class="contact-title">Get in Touch</h2>
+
+  <div class="contact-column">
+
+    <div class="contact-item">
+      <h3>Email:</h3>
+      <p>BukenzoEvents247@gmail.com</p>
+    </div>
+
+    <div class="contact-item">
+      <h3>Phone:</h3>
+            <!-- CALL BUTTON -->
+      <a href="tel:+447533438897" class="call-btn">CALL: +44 7533 438897</a>
+    </div>
+
+    <div class="contact-item">
+      <h3>Location:</h3>
+      <p>  United Kingdom, Grange Park Northampton NN4 5DW</p>
+    </div>
+
+    <div class="contact-item">
+      <h3>Working Hours:</h3>
+      <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+    </div>
+
+  </div>
+
+</section>
+          </div>
+
+          <div class="appointment-form" style="padding:0;">
+            <div class="form-wrapper" id="formBlock">
+              <h3 class="form-heading" style="margin-bottom:14px; font-family:'Amiri',serif; font-size:1.6rem;">Book Appointment Today!</h3>
+
+              <form class="appointment-form" id="appointmentForm">
+                <div class="form-row">
+                  <input type="text" name="firstName" placeholder="First name" required />
+                  <input type="text" name="lastName" placeholder="Last name" required />
+                </div>
+
+                <input type="email" name="email" placeholder="Enter email address" required />
+
+                <div class="form-row">
+                  <input type="tel" name="phone" placeholder="Phone number" required />
+                  <input type="date" name="appointmentDate" required />
+                </div>
+
+                <div class="form-row">
+                  <input type="text" name="appointmentTime" placeholder="Preferred time (e.g. 2:30 PM)" required />
+                  <input type="text" name="eventType" placeholder="Event type (e.g. wedding, birthday)" />
+                </div>
+
+                <textarea name="message" placeholder="Describe your event (dates, location, guests, budget if you can)" required></textarea>
+
+                <div class="appt-actions">
+                  <button class="appt-submit" type="submit">SEND REQUEST</button>
+                </div>
+
+                <div class="appt-helper">We’ll only use your details to contact you about your booking.</div>
+
+                <div class="appt-error-banner" id="apptErrorBanner" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <div class="success-wrapper" id="successBlock" style="display:none;">
+              <h3 class="form-heading" style="margin-bottom:14px; font-family:'Amiri',serif; font-size:1.6rem;">Appointment Request Sent</h3>
+              <p class="success-text" style="font-family:'Poppins',sans-serif; color:#6b7280; margin:10px 0 0;">
+                Thanks for contacting us! We’ll be in touch shortly to confirm your consultation.
+              </p>
+
+              <ul id="apptSummaryList" class="appt-summary-list" aria-label="Your appointment summary"></ul>
+
+              <div class="appt-actions" style="margin-top:18px;">
+                <a href="index.html" class="btn-primary" style="display:inline-block; text-align:center; width:100%; border-radius:12px; padding:13px 18px;">Back to Home</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flaticon UIcons Brands CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+/>
+
+<section class="dark-section">
+  <div class="dark-links">
+    
+    <a class="social-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <i class="fi fi-brands-facebook"></i>
+    </a>
+
+    <a class="social-link" href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fi fi-brands-instagram"></i>
+    </a>
+
+    <a class="social-link" href="https://twitter.com" target="_blank" aria-label="Twitter">
+      <i class="fi fi-brands-twitter"></i>
+    </a>
+
+    <a class="social-link" href="https://tiktok.com" target="_blank" aria-label="TikTok">
+      <i class="fi fi-brands-tik-tok"></i>
+    </a>
+
+  </div>
+</section>
+
+  <footer class="site-footer">
+    <p>Copyright © 2026 Bukenzo Events</p>
+  </footer>
+
+  <section class="dev-by">
+    <div class="dev-container">
+      <p class="dev-text">
+        Developed by
+        <a href="https://r2systemsolution.co.uk" target="_blank" class="dev-brand">
+          R2 Systems Solution LTD
+        </a>
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+
